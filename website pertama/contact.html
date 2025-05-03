@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>WEB AING</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+            <!-- NAVBAR -->
+            <div class="container">
+                <div class="sidebar">
+                    <ul>
+                        <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li class="li-navbar">
+                            <a href="index.html" class="A-NAVBAR">BERANDA</a>
+                        </li>
+                        <li class="li-navbar">
+                            <a href="about.html" class="A-NAVBAR">ABOUT</a>
+                        </li>
+                        <li class="li-navbar">
+                            <a href="proyek.html" class="A-NAVBAR">PROGRAM</a>
+                        </li>
+                        <li class="li-navbar">
+                            <a href="contact.html" class="A-NAVBAR">CONTACT</a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="container-navbar">
+                    <div class="logo-navbar">
+                        <img src="logo iot.jpeg" class="img-navbar" />
+                        <p class="p-1">Internet of Things. UPNVJ</p>
+                    </div>
+                    
+                    <ul class="ul-navbar">
+                        <li class="hideOnmobile">
+                            <a href="index.html" class="A-NAVBAR">BERANDA</a>
+                        </li>
+                        <li class="hideOnmobile">
+                            <a href="about.html" class="A-NAVBAR">ABOUT</a>
+                        </li>
+                        <li class="hideOnmobile">
+                            <a href="proyek.html" class="A-NAVBAR">PROGRAM</a>
+                        </li>
+                        <li class="hideOnmobile">
+                            <a href="contact.html" class="A-NAVBAR">CONTACT</a>
+                        </li>
+                        <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" display="flex" align-items="flex-end" justify-content="flex-end" height="36px" viewBox="0 -960 960 960" width="36px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- NAVBAR END -->
+
+        <!-- CONTENT 1 -->
+        <section id="contact-us" class="container-us">
+
+            <form action="#">
+                <h1 class="GET">Get In Touch</h1>
+
+                <div class="InputsWrapper">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <botton class="primary-btn">SEND NOW</botton>
+                </div>
+            </form>
+        </section>
+
+         
+        <!-- CONTENT 1 END -->
+
+         <!-- FOOTBAR -->
+        <footer class="footer">
+            <div class="footer-left">
+                <img src="logo.jpeg" class="img-navbar" />
+                <h1>Internet of Things. UPNVJ</h1>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Indonesia</span> Jawa Barat,Depok</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+62 859-5910-9748</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDsfWxfLPgJPZsxwJXgDTMhVcjJQdbVqXgSsVqxkGlCwfpXLfFSKXpPWvsktGRTbGnJXnK">internetofthings.upnvj@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>About</span>
+                    Website ini akan berfungsi untuk menyampaikan informasi penting kepada 
+                    publik dan memperkuat kredibilitas organisasi.Dengan metode yang baik 
+                    dan informasi yang jelas, website dapat menjadi alat efektif dalam 
+                    menarik anggota baru dan meningkatkan visibilitas organisasi.Jika Anda 
+                    membutuhkan informasi lebih lanjut atau saran khusus, silakan bertanya!
+                </p>
+
+                <div class="footer-media">
+                    <a href="https://www.instagram.com/iot.upnvj/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/internet-of-things-upnvj/"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTBAR END -->
+         
+        </div>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hidesidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+                
+            }
+        </script>
+    </body>
+</html>
